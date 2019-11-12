@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/style.css" charset="UTF-8">
     <title>Fangfang Sheng</title>
 </head>
 <body>
-    <div class="container"></div>
-    <img src="../static/profile.png" alt="Fangfang" class="profile">
-    {% if message %}
+    <div class="container">
+        <img src="../static/profile.png" alt="Fangfang" class="profile">
+        {% if message %}
         <p class="message">{{ message | safe }}</p>
-    {% endif %}
-    <form action="/submit" method="post">
-        <div class="form-group">
+        {% endif %}
+        <form action="/submit" method="post">
+            <div class="form-group">
             <h3>what is your name</h3>
             <input type="text" name="visitor" placeholder="preferred name">
-        </div>
-        <div class="form-group">
-            <h3>way to connect to you</h3>
-            <select name="methods">
-                <option value="">Select most convinent way for you</option>
-                <option value="email address">email address</option>
-                <option value="twitter">twitter</option>
-                <option value="facebook">facebook</option>
-                <option value="phone number">phone number</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <h3>Leave all the details</h3>
-            <textarea name="contact information" id="" cols="30" rows="10" placeholder="please type your contact here"></textarea>
-        </div>
-        <div class="form-group">
-            <input type="submit" value="Submit" class="btn">
-        </div>
-    </form>
-
+            </div>
+            <div class="form-group">
+                <h3>way to connect to you</h3>
+                <select name="methods">
+                    <option value="">Select most convinent way for you</option>
+                    <option value="email address">email address</option>
+                    <option value="twitter">twitter</option>
+                    <option value="facebook">facebook</option>
+                    <option value="phone number">phone number</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <h3>Leave all the details</h3>
+                <textarea name="contact information" id="" cols="30" rows="10" placeholder="please type your contact here"></textarea>
+            </div>
+            <div class="form-group">
+<!--                <input type="submit" value="Get in touch" class="btn btn1">-->
+                <input type="submit" value="Get in touch" class="btn btn2">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
