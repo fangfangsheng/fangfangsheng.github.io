@@ -146,3 +146,5 @@ dmypy.json
 cython_debug/
 
 
+static/.DS_Store
+.DS_Store
